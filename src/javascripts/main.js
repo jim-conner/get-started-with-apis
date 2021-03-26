@@ -3,7 +3,7 @@
 import 'bootstrap'; // import bootstrap elements and js
 import '../styles/main.scss';
 import buildDom from './components/buildDom';
-import buildJoke from './components/jokeScreen';
+import buildJoke from './components/jokeForms/jokeScreen';
 import domEvents from './events/domEvents';
 
 const init = () => {
