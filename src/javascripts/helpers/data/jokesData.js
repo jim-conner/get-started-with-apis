@@ -9,4 +9,6 @@ const getJokes = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
+// const getPunchline
+
 export default getJokes;

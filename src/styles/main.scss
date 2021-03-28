@@ -8,12 +8,22 @@ body {
   margin-top: 100px;
 }
 
-#jokeCard {
+#card-container {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+}
+
+#joke-card {
   position: absolute;
-width: 712px;
+// width: 712px;
 height: 735px;
-left: 364px;
-top: 161px;
+// left: 364px;
+// top: 161px;
 background: #474747;
 border-radius: 20px;
+}
+
+#button-container {
+  bottom: 20px;
 }
