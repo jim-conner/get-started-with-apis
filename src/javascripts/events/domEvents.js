@@ -1,5 +1,5 @@
 import { setupJoke, punchlineJoke } from '../components/jokeForms/jokeSetupForm';
-// import getJokes from '../helpers/data/jokesData';
+import buildJoke from '../components/jokeForms/jokeScreen';
 
 const domEvents = () => {
   document.querySelector('body').addEventListener('click', (e) => {
@@ -8,8 +8,13 @@ const domEvents = () => {
       setupJoke();
     }
 
-    if (e.target.id.includes('punchline')) {
+    if (e.target.id.includes('punchline-button')) {
       punchlineJoke();
+    }
+
+    if (e.target.id.includes('restart-button')) {
+      // document.querySelector('joke-card').innerHTML = '';
+      buildJoke();
     }
   });
 };

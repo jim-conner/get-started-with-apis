@@ -9,11 +9,6 @@ const getJokes = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-const getPunchline = () => Promise((resolve, reject) => {
-  axios.get(`${dbUrl}/random_joke`)
-    .then((response) => resolve((response.data)))
-    // .then((response) => console.warn(response.data))
-    .catch((error) => reject(error));
-});
+// const getPunchline
 
-export { getJokes, getPunchline };
+export default getJokes;
