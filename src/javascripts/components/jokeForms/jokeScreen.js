@@ -1,5 +1,4 @@
 const buildJoke = () => {
-  // jokeArray.forEach(() => {
   document.querySelector('#display-section').innerHTML += `
   <div id="card-container">
     <div class="card text-center" id="joke-card">

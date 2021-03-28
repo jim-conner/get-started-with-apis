@@ -1,5 +1,5 @@
-import { setupJoke, punchlineJoke } from '../components/jokeForms/jokeSetupForm';
-import buildJoke from '../components/jokeForms/jokeScreen';
+import { setupJoke, punchlineJoke, restartJoke } from '../components/jokeForms/jokeSetupForm';
+// import buildJoke from '../components/jokeForms/jokeScreen';
 
 const domEvents = () => {
   document.querySelector('body').addEventListener('click', (e) => {
@@ -13,8 +13,8 @@ const domEvents = () => {
     }
 
     if (e.target.id.includes('restart-button')) {
-      // document.querySelector('joke-card').innerHTML = '';
-      buildJoke();
+      // document.querySelector('joke-container').innerHTML = '';
+      restartJoke();
     }
   });
 };
