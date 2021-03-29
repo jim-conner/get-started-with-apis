@@ -1,6 +1,6 @@
 // USE WITH FIREBASE AUTH
 // import checkLoginStatus from './helpers/auth';
-import 'bootstrap'; // import bootstrap elements and js
+import 'bootstrap';
 import '../styles/main.scss';
 import buildDom from './components/buildDom';
 import buildJoke from './components/jokeForms/jokeScreen';

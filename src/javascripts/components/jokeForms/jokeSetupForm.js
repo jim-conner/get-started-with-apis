@@ -11,7 +11,6 @@ const setupJoke = () => {
     `;
   });
 };
-// document.querySelector('#punchline').innerHTML = '';
 
 const punchlineJoke = () => {
   document.querySelector('#punchline').innerHTML = `<h5>${(joke.punchline).toUpperCase()}</h5>`;
